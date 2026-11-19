@@ -2,7 +2,7 @@
 name = "rust-anty"
 version = "2.0.0"
 edition = "2021"
-description = "RUST ANTY — Fast Native Antidetect Browser Manager"
+description = "RUST ANTY - Fast Native Antidetect Browser Manager"
 
 [dependencies]
 base64 = "0.22"

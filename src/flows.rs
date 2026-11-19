@@ -197,7 +197,7 @@ pub async fn configure_proxy_flow(allow_remove: bool) -> ProxyFlowResult {
                         }
                         "3" => {
                             let manual_tz = prompt(
-                                "Часовой пояс прокси (например Europe/London, Enter — оставить текущий)",
+                                "Часовой пояс прокси (например Europe/London, Enter - оставить текущий)",
                             );
                             let tz_opt = if manual_tz.is_empty() {
                                 None
@@ -225,7 +225,7 @@ pub async fn create_profile_flow(db: &mut ProfileDb) -> Option<String> {
     println!("{}", section_header("СОЗДАНИЕ НОВОГО ПРОФИЛЯ"));
     println!("{}", divider(72));
 
-    let name = prompt("Название профиля (Enter — отмена)");
+    let name = prompt("Название профиля (Enter - отмена)");
     if name.is_empty() {
         return None;
     }
@@ -404,7 +404,7 @@ pub fn select_profile_flow(db: &ProfileDb, sessions: &SessionManager) -> Option<
     }
 
     println!("{}", thin_divider(76));
-    let raw = prompt("Номер профиля для выбора (Enter — назад)");
+    let raw = prompt("Номер профиля для выбора (Enter - назад)");
     if let Ok(n) = raw.parse::<usize>() {
         if (1..=names.len()).contains(&n) {
             return Some(names[n - 1].clone());

@@ -42,7 +42,7 @@ pub fn init_terminal() {
         }
     }
 
-    print!("\x1b]0;RUST ANTY v2.0 — Native Antidetect Engine\x07");
+    print!("\x1b]0;RUST ANTY v2.0 - Native Antidetect Engine\x07");
     let _ = io::stdout().flush();
 }
 
