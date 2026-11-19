@@ -1,3 +1,5 @@
+//! Cookie import/export (JSON & Netscape HTTP Cookie File) and CDP conversion.
+
 use std::fs;
 use std::path::Path;
 use serde::{Deserialize, Serialize};
