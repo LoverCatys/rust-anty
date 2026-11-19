@@ -1,4 +1,4 @@
-//! Detection of the REAL host hardware.
+//! Detection of the REAL host hardware (CPU thread count & physical GPU).
 //!
 //! JS-level spoofing can only rewrite strings. Everything a page can *measure*
 //! (WebGL extensions/limits, WebGPU features, rendering output, real parallelism
