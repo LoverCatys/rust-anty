@@ -1,0 +1,8 @@
+/target
+/sessions
+profiliki.json
+profiliki.json.tmp
+cookies_*.json
+cookies_*.txt
+main (2) (1).py
+*.bak
